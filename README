@@ -1,0 +1,4 @@
+Predictive Maintenance & Simulation System | Python, FastAPI, Scikit-learn, Plotly
+• Developed a predictive maintenance system to analyze sensor data and estimate failure probability using machine learning.
+• Built a simulation module to evaluate impact of operational changes on system performance.
+• Exposed functionality via FastAPI endpoints for real-time predictions and reporting.
