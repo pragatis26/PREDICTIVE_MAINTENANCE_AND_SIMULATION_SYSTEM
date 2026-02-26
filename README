@@ -1,27 +1,26 @@
-# 🔧 Predictive Maintenance & Simulation System
+🔧 Predictive Maintenance & Simulation System
 
-A Machine Learning powered system that predicts **industrial equipment failure** using real-time sensor data.
-The project uses a **Random Forest classification model** and exposes predictions through a **FastAPI REST API**, allowing users to simulate machine conditions and analyze failure probability.
+A Machine Learning powered system that predicts industrial equipment failure using real-time sensor data.
+The project uses a Random Forest classification model and exposes predictions through a FastAPI REST API, allowing users to simulate machine conditions and analyze failure probability.
 
-This project demonstrates **predictive analytics, backend API development, and simulation modeling** for real-world maintenance systems.
+This project demonstrates predictive analytics, backend API development, and simulation modeling for real-world maintenance systems.
 
----
+📌 Project Overview
 
-# 📌 Project Overview
-
-Unexpected equipment failures can lead to **high operational costs and downtime** in industrial environments.
+Unexpected equipment failures can lead to high operational costs and downtime in industrial environments.
 This system predicts potential failures based on sensor readings such as:
 
-* Temperature
-* Vibration
-* Pressure
-* Humidity
+Temperature
 
-By analyzing these inputs, the model estimates the **probability of machine failure**, helping organizations take **preventive maintenance actions** before breakdowns occur.
+Vibration
 
----
+Pressure
 
-# 🚀 Features
+Humidity
+
+By analyzing these inputs, the model estimates the probability of machine failure, helping organizations take preventive maintenance actions before breakdowns occur.
+
+🚀 Features
 
 ✅ Machine Failure Prediction using Machine Learning
 ✅ Random Forest classification model
@@ -30,102 +29,75 @@ By analyzing these inputs, the model estimates the **probability of machine fail
 ✅ JSON-based API responses
 ✅ Interactive API documentation with Swagger UI
 
----
+🧠 Tech Stack
 
-# 🧠 Tech Stack
+Python
 
-* **Python**
-* **Scikit-learn**
-* **FastAPI**
-* **NumPy**
-* **Pandas**
-* **Uvicorn**
+Scikit-learn
 
----
+FastAPI
 
-# ⚙️ Installation
+NumPy
+
+Pandas
+
+Uvicorn
+
+
+⚙️ Installation
 
 Clone the repository
 
-```
 git clone https://github.com/pragatis26/PREDICTIVE_MAINTENANCE_AND_SIMULATION_SYSTEM.git
 cd predictive-maintenance-system
-```
 
 Install dependencies
 
-```
 pip install -r requirements.txt
-```
-
----
-
-# ▶️ Running the API
+▶️ Running the API
 
 Start the FastAPI server
 
-```
 uvicorn api.main:app --reload
-```
 
 The API will run at:
 
-```
 http://127.0.0.1:8000
-```
-
----
-
-# 📖 API Documentation
+📖 API Documentation
 
 FastAPI automatically generates interactive documentation.
 
 Open in browser:
 
-```
 http://127.0.0.1:8000/docs
-```
+🔮 Prediction Endpoint
 
----
-
-# 🔮 Prediction Endpoint
-
-**POST /predict**
+POST /predict
 
 Predicts whether equipment will fail based on sensor data.
 
 Example request:
 
-```
 http://127.0.0.1:8000/predict?temperature=90&vibration=0.08&pressure=55&humidity=65
-```
 
 Example response:
 
-```
 {
   "failure_prediction": 1,
   "failure_probability": 0.87
 }
-```
+🔬 Simulation Endpoint
 
----
-
-# 🔬 Simulation Endpoint
-
-**GET /simulate**
+GET /simulate
 
 Simulates machine behavior under changing conditions to analyze failure risk.
 
 Example request:
 
-```
 http://127.0.0.1:8000/simulate?temperature=70&vibration=0.08&pressure=55&humidity=65
-```
 
 Example response:
 
-```
 {
   "simulation_results": [
     {
@@ -140,78 +112,68 @@ Example response:
     }
   ]
 }
-```
-
----
-
-# 🧪 Simulation Script
+🧪 Simulation Script
 
 The project also includes a Python script that simulates sensor conditions and predicts failure probabilities.
 
 Run:
 
-```
 python simulation/simulate.py
-```
 
 Example output:
 
-```
 {'temperature': 70, 'failure_prediction': 1, 'failure_probability': 0.57}
 {'temperature': 75, 'failure_prediction': 1, 'failure_probability': 0.63}
 {'temperature': 80, 'failure_prediction': 1, 'failure_probability': 0.73}
-```
+📊 Machine Learning Model
 
----
-
-# 📊 Machine Learning Model
-
-The system uses a **Random Forest Classifier** trained on simulated industrial sensor data.
+The system uses a Random Forest Classifier trained on simulated industrial sensor data.
 
 Model inputs:
 
-* Temperature
-* Vibration
-* Pressure
-* Humidity
+Temperature
+
+Vibration
+
+Pressure
+
+Humidity
 
 Model output:
 
-* Failure prediction (0 = Normal, 1 = Failure)
-* Failure probability score
+Failure prediction (0 = Normal, 1 = Failure)
+
+Failure probability score
 
 The trained model is stored as:
 
-```
 model/model.pkl
-```
+🎯 Key Learning Outcomes
 
----
+Building ML-powered backend systems
 
-# 🎯 Key Learning Outcomes
+Deploying Machine Learning models using FastAPI
 
-* Building ML-powered backend systems
-* Deploying Machine Learning models using FastAPI
-* Designing REST APIs for predictive analytics
-* Implementing simulation-based testing
-* Structuring production-ready Python projects
+Designing REST APIs for predictive analytics
 
----
+Implementing simulation-based testing
 
-# 📌 Future Improvements
+Structuring production-ready Python projects
 
-* Real-time IoT sensor integration
-* Interactive dashboard for monitoring
-* Model retraining pipeline
-* Deployment using Docker and cloud platforms
-* Alerting system for high failure probability
+📌 Future Improvements
 
----
+Real-time IoT sensor integration
 
-# 👩‍💻 Author
+Interactive dashboard for monitoring
 
-**Pragati**
+Model retraining pipeline
+
+Deployment using Docker and cloud platforms
+
+Alerting system for high failure probability
+
+👩‍💻 Author
+
+Pragati
 
 Machine Learning | Data Analytics | Backend Development
-
----
